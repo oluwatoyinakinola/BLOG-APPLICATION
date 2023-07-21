@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <title>Blog Website</title>
+</head>
+<body>
+ 
+       <h1>All Blogs</h1>
+       <p>THESE ARE ALL MY BLOGS</p>
+  <% blogs.forEach(async function(blog) { %>
+    <div>
+      <h2><%= blog.title %></h2>
+      <p>Author: <%= blog.author.username %></p>
+      <p><%= blog.content %></p>
+    </div>
+    <hr>
+  <% }) %>
+
+</body>
+</html>
+
